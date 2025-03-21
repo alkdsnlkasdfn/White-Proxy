@@ -39,12 +39,3 @@ document.getElementById("switcher").onselect = async function (event) {
             break;
     }
 }
-fetch(url, {
-      method: "get",
-      headers: new Headers({
-        "localtonet-skip-warning": "69420",
-      }),
-    })
-      .then((response) => response.json())
-      .then((data) => console.log(data))
-      .catch((err) => console.log(err));
