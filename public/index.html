@@ -13,19 +13,69 @@
     }
     </script>
 
+
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <script>
+        // Function to load the theme from localStorage
+        function loadTheme() {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme) {
+                document.body.classList.add(savedTheme);
+            } else {
+                document.body.classList.add('light-theme'); // Default theme
+            }
+        }
 
-    <iframe id="iframeWindow" class="iframeWindow"></iframe>
-    <div>
+        // Function to toggle between light and dark themes and save it to localStorage
+        function toggleTheme() {
+            const body = document.body;
+            if (body.classList.contains('light-theme')) {
+                body.classList.remove('light-theme');
+                body.classList.add('dark-theme');
+                localStorage.setItem('theme', 'dark-theme'); // Save theme to localStorage
+            } else {
+                body.classList.remove('dark-theme');
+                body.classList.add('light-theme');
+                localStorage.setItem('theme', 'light-theme'); // Save theme to localStorage
+            }
+        }
+
+        // Load the saved theme on page load
+        window.onload = loadTheme;
+    </script>
+    <script type="text/javascript">
+        function checkPswd() {
+            var confirmPassword = "00000";
+            var password = document.getElementById("pswd").value;
+            if (password == confirmPassword) {
+                document.getElementById("pswd").style.display = "none";
+                document.getElementById("s").style.display = "none";
+                document.getElementById("i").style.display = "none";
+                document.getElementById("hi").style.display = "block";
+                document.getElementById("iframeWindow").style.display = "block";
+            }
+            else{
+                alert("Passwords do not match.");
+            }
+        }
+    </script>
+    <form>
+        <img id="i" src="124138471_10157818254665933_5002802355620967700_o.avif" alt="King Von" width="100px" height="100px">
+        <input type="password" id="pswd" placeholder="Enter password:">
+        <input id="s" type="button" value="Submit" onclick="checkPswd();" />
+    </form>
+    <iframe id="iframeWindow" class="iframeWindow" style="display: none;">Sorry could not load.</iframe>
+    <div id="hi" style="display: none;">
     <input type="text" id="urlInput" placeholder="White-Proxy:">
     <a id="searchButton">Search Text</a>
     <select id="switcher">
-        <option value="epoxy">Epoxy (NEW for UV 3)</option>
-        <option value="bare">Bare (default)</option>
+        <option class="option" value="epoxy">Epoxy (NEW for UV 3)</option>
+        <option class="option" value="bare">Bare (default)</option>
     </select>
-    <a onclick='window.location.replace("https://kingvon.web.app");'>Exit</a>
+    <a onclick='location.reload();'>Exit</a>
+    <a class="theme-switcher" onclick="toggleTheme()">Switch Theme</a>
     </div>
 
 </body>
