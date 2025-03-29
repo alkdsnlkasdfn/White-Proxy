@@ -13,29 +13,20 @@
     }
     </script>
 
-
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<style>
-.iframeWindow {
-    position: absolute;
-    width: 100vw;
-    height: 96.20vh;
-    border: 0;
-    padding: 0;
-    margin: 0;
-    left: 0;
-    bottom: 0;
-}
-</style>
+
     <iframe id="iframeWindow" class="iframeWindow"></iframe>
-    <input type="text" id="urlInput" placeholder="Welcome to White Proxy">
-    <button id="searchButton">Search Text</button>
+    <div>
+    <input type="text" id="urlInput" placeholder="White-Proxy:">
+    <a id="searchButton">Search Text</a>
     <select id="switcher">
         <option value="epoxy">Epoxy (NEW for UV 3)</option>
         <option value="bare">Bare (default)</option>
     </select>
-
+    <a onclick='window.location.replace("https://kingvon.web.app");'>Exit</a>
+    </div>
 
 </body>
 <script src="example.js"></script>
