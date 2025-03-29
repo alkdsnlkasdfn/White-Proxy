@@ -1,8 +1,6 @@
-
-  body {
+body{
   font: 1em Courier New;
   margin: 0;
-  background-color: rgb(255, 255, 255);
 }
 .iframeWindow {
    font: 1em Courier New;
@@ -23,12 +21,12 @@
 }
 a {
   font: 1em Courier New;
-  padding: 15px 32px;
+  padding: 12px 20px;
+  margin: 8px 0;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
   cursor: pointer;
   font: 1em Courier New;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
@@ -58,11 +56,12 @@ div {
     border-radius: 20px;
     border:1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    text-align: center;
 }
 #switcher{
    font: 1em Courier New;
-    padding: 12px 20px;
-    margin: 8px 0;
+   padding: 12px 20px;
+   margin: 8px 0;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -70,15 +69,69 @@ div {
     border:1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
-option{
-   font: 1em Courier New;
-    padding: 12px 20px;
-    margin: 8px 0;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 20px;
-    border:1px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); 
+.option{
+  font: 1em Courier New;
+  padding: 12px 20px;
+  margin: 8px 0;
+  background-color: rgb(255, 0, 0);
 }
+        /* Light theme styles */
+        body.light-theme {
+          background-color: #ffffff;
+      }
 
+      /* Dark theme styles */
+      body.dark-theme {
+          background-color: #333333;
+      }
+      #pswd{
+        font: 1em Courier New;
+        padding: 12px 20px;
+        margin: 8px 0;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+          backdrop-filter: blur(10px);
+          -webkit-backdrop-filter: blur(10px);
+          border-radius: 20px;
+          border:1px solid rgba(255, 255, 255, 0.18);
+          box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+          text-align: center;
+          position: fixed;
+          top: 400px;
+          left: 620px;
+      }
+      #s{
+        font: 1em Courier New;
+        padding: 12px 20px;
+        margin: 8px 0;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        font: 1em Courier New;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+          backdrop-filter: blur(10px);
+          -webkit-backdrop-filter: blur(10px);
+          border-radius: 20px;
+          border:1px solid rgba(255, 255, 255, 0.18);
+          box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+          position: fixed;
+          top: 400px;
+          left: 860px;
+      }
+      img{
+        font: 1em Courier New;
+        padding: 12px 20px;
+        margin: 8px 0;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+          backdrop-filter: blur(10px);
+          -webkit-backdrop-filter: blur(10px);
+          border-radius: 20px;
+          border:1px solid rgba(255, 255, 255, 0.18);
+          box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+          text-align: center;
+          position: fixed;
+          top: 260px;
+          left: 710px;
+          border-radius: 200px;
+      }
