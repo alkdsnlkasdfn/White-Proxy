@@ -20,7 +20,7 @@
     border:1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
-a {
+#searchButton {
   font: 1em Courier New;
   padding: 12px 20px;
   margin: 8px 0;
@@ -37,7 +37,50 @@ a {
     border:1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
-div {
+#searchButton:hover{
+  background: rgba(255, 0, 0, 0);
+}
+#hg {
+  font: 1em Courier New;
+  padding: 12px 20px;
+  margin: 8px 0;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  font: 1em Courier New;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+#hg:hover{
+  background: rgba(255, 0, 0, 0);
+}
+#h {
+  font: 1em Courier New;
+  padding: 12px 20px;
+  margin: 8px 0;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  font: 1em Courier New;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+#h:hover{
+  background: rgba(255, 0, 0, 0);
+}
+#hi {
    font: 1em Courier New;
     overflow: hidden;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
@@ -59,6 +102,9 @@ div {
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     text-align: center;
 }
+#urlInput:hover{
+  background: rgba(255, 0, 0, 0);
+}
 #switcher{
    font: 1em Courier New;
    padding: 12px 20px;
@@ -69,6 +115,9 @@ div {
     border-radius: 20px;
     border:1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+#switcher:hover{
+  background: rgba(255, 0, 0, 0);
 }
 .option{
   font: 1em Courier New;
@@ -100,6 +149,9 @@ div {
           top: 400px;
           left: 620px;
       }
+      #pswd:hover{
+        background: rgba(255, 0, 0, 0);
+      }
       #s{
         font: 1em Courier New;
         padding: 12px 20px;
@@ -119,6 +171,9 @@ div {
           position: fixed;
           top: 400px;
           left: 860px;
+      }
+      #s:hover{
+        background: rgba(255, 0, 0, 0);
       }
       #i{
         font: 1em Courier New;
@@ -175,4 +230,77 @@ div {
       #as{
         border-radius: 50%;
         float: right;
+      }
+      #roadmap{
+        font: 1em Courier New;
+        overflow: hidden;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 20px;
+        border:1px solid rgba(255, 255, 255, 0.18);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        height: 300px;
+        width: 320px;
+        position: fixed;
+        bottom: 1px;
+        right: 1px;
+      }
+      #ri{
+        font: 1em Courier New;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+      }
+      #green{
+        font: 1em Courier New;
+        color: #39FF14;
+      }
+      #red{
+        font: 1em Courier New;
+        color: #FF3131;
+      }
+      #min {
+        font: 1em Courier New;
+        padding: 1px 1px;
+        margin: 8px 0;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        font: 1em Courier New;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+          backdrop-filter: blur(10px);
+          -webkit-backdrop-filter: blur(10px);
+          border-radius: 20px;
+          border:1px solid rgba(255, 255, 255, 0.18);
+          box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+          position: fixed;
+          right: 5px;
+      }
+      #min:hover{
+        background: rgba(255, 0, 0, 0);
+      }
+      #eu {
+        font: 1em Courier New;
+        padding: 12px 20px;
+        margin: 8px 0;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        font: 1em Courier New;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+          backdrop-filter: blur(10px);
+          -webkit-backdrop-filter: blur(10px);
+          border-radius: 20px;
+          border:1px solid rgba(255, 255, 255, 0.18);
+          box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+          position: fixed;
+          right: 1px;
+          bottom: 1px;
+      }
+      #eu:hover{
+        background: rgba(255, 0, 0, 0);
       }
