@@ -1,4 +1,5 @@
-body{
+
+  body{
   font: 1em Courier New;
   margin: 0;
 }
@@ -121,7 +122,23 @@ div {
       }
       img{
         font: 1em Courier New;
-        padding: 12px 20px;
+        padding: 10px 10px;
+        margin: 0px 0px;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+          backdrop-filter: blur(10px);
+          -webkit-backdrop-filter: blur(10px);
+          border-radius: 20px;
+          border:1px solid rgba(255, 255, 255, 0.18);
+          box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+          text-align: center;
+          position: fixed;
+          top: 257px;
+          left: 720px;
+          border-radius: 50%;
+      }
+      #p{
+        font: 1em Courier New;
+        padding: 2px 20px;
         margin: 8px 0;
         background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
           backdrop-filter: blur(10px);
@@ -131,7 +148,27 @@ div {
           box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
           text-align: center;
           position: fixed;
-          top: 260px;
-          left: 710px;
+          top: 372.5px;
+          left: 700px;
           border-radius: 200px;
+      }
+      #n{
+        font: 1em Courier New;
+        color: red;
+        padding: 2px 20px;
+        margin: 8px 0;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+          backdrop-filter: blur(10px);
+          -webkit-backdrop-filter: blur(10px);
+          border-radius: 20px;
+          border:1px solid rgba(255, 255, 255, 0.18);
+          box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+          text-align: center;
+          position: fixed;
+          top: 447px;
+          left: 646px;
+          border-radius: 200px;
+      }
+      #z{
+        border-radius: 100px;
       }
