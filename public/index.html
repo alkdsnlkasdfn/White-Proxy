@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Home | Schoology</title>
+    <link rel="icon" type="image/x-icon" href="PowerSchoolLogos_Vertical-01.png">
     <script src="/uv/uv.bundle.js"></script>
     <script src="/uv/uv.config.js"></script>
     <script src="/baremux/index.js"></script>
@@ -12,9 +14,35 @@
         });
     }
     </script>
+    <script>
+    document.onkeydown = function(e) {
+        if(e.keyCode == 123) {
+         return false;
+        }
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
+         return false;
+        }
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
+         return false;
+        }
+        if(e.ctrlKey && e.keyCode == 'S'.charCodeAt(0)){
+         return false;
+        }
+        if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
+         return false;
+        }
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)){
+         return false;
+        }      
+     }
+     document.addEventListener('contextmenu', 
 
+        event => event.preventDefault() 
 
-<link rel="stylesheet" href="styles.css">
+    )
+     </script>
+
+<link id="z" rel="stylesheet" href="styles.css">
 </head>
 <body>
     <script>
@@ -53,18 +81,23 @@
                 document.getElementById("pswd").style.display = "none";
                 document.getElementById("s").style.display = "none";
                 document.getElementById("i").style.display = "none";
+                document.getElementById("p").style.display = "none";
                 document.getElementById("hi").style.display = "block";
                 document.getElementById("iframeWindow").style.display = "block";
+                document.getElementById("n").style.display = "none";
             }
             else{
-                alert("Passwords do not match.");
+                document.getElementById("n").style.display = "block";
             }
         }
     </script>
     <form>
+        
         <img id="i" src="124138471_10157818254665933_5002802355620967700_o.avif" alt="King Von" width="100px" height="100px">
+        <p id="p">King Von Proxy</p>
         <input type="password" id="pswd" placeholder="Enter password:">
         <input id="s" type="button" value="Submit" onclick="checkPswd();" />
+        <p style="display: none;" id="n">Sorry! Incorrect password.</p>
     </form>
     <iframe id="iframeWindow" class="iframeWindow" style="display: none;">Sorry could not load.</iframe>
     <div id="hi" style="display: none;">
