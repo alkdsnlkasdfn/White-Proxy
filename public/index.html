@@ -6,6 +6,11 @@
     <script src="/uv/uv.bundle.js"></script>
     <script src="/uv/uv.config.js"></script>
     <script src="/baremux/index.js"></script>
+    <script>
+        window.onbeforeunload = function(e) {
+          return 'Are you sure you want to leave this page?  You will lose any unsaved data.';
+        };
+    </script>
     
     <script>
     if ("serviceWorker" in navigator) {
@@ -86,7 +91,8 @@
                 document.getElementById("iframeWindow").style.display = "block";
                 document.getElementById("n").style.display = "none";
                 document.getElementById("as").style.display = "block";
-
+                document.getElementById("roadmap").style.display = "none";
+                document.getElementById("eu").style.display = "none";
             }
             else{
                 document.getElementById("n").style.display = "block";
@@ -94,6 +100,18 @@
         }
     </script>
     <form>
+        <a id="eu" onclick='document.getElementById("roadmap").style.display = "block"; document.getElementById("eu").style.display = "none";'>View Roadmap</a>
+        <div id="roadmap" style="display: none;">
+            <a id="min" onclick='document.getElementById("roadmap").style.display = "none"; document.getElementById("eu").style.display = "block";'>-</a>
+            <p id="ri">Roadmap</p>
+            <p id="green">[1] New UI</p>
+            <p id="red">[2] Multi-Tab Proxy</p>
+            <p id="red">[3] Scramjet Support</p>
+            <p id="red">[4] Username and Password Support</p>
+            <p id="red">[5] More Themes</p>
+            <p id="red">[6] Faster Proxy</p>
+            <p id="red">[7] Paid Premium Tier</p>
+        </div>
         <img id="i" src="124138471_10157818254665933_5002802355620967700_o.avif" alt="King Von" width="100px" height="100px">
         <p id="p">King Von Proxy</p>
         <input type="password" id="pswd" placeholder="Enter password:">
@@ -108,8 +126,8 @@
         <option class="option" value="epoxy">Epoxy (NEW for UV 3)</option>
         <option class="option" value="bare">Bare (default)</option>
     </select>
-    <a class="theme-switcher" onclick="toggleTheme()">Switch Theme</a>
-    <a onclick='location.reload();'>Exit</a>
+    <a id="h" class="theme-switcher" onclick="toggleTheme()">Switch Theme</a>
+    <a id="hg" onclick='location.reload();'>Exit</a>
     <img width="60px" height="60x" w style="display: none;" id="as" src="124138471_10157818254665933_5002802355620967700_o.avif" alt="King Von" width="100px" height="100px">
     </div>
 
