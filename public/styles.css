@@ -120,7 +120,7 @@ div {
           top: 400px;
           left: 860px;
       }
-      img{
+      #i{
         font: 1em Courier New;
         padding: 10px 10px;
         margin: 0px 0px;
@@ -171,4 +171,8 @@ div {
       }
       #z{
         border-radius: 100px;
+      }
+      #as{
+        border-radius: 50%;
+        float: right;
       }
