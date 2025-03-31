@@ -165,7 +165,6 @@
           border:1px solid rgba(255, 255, 255, 0.18);
           box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
           text-align: center;
-          position: fixed;
           top: 400px;
           left: 620px;
       }
@@ -187,8 +186,6 @@
           -webkit-backdrop-filter: blur(10px);
           border-radius: 20px;
           border:1px solid rgba(255, 255, 255, 0.18);
-          box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-          position: fixed;
           top: 400px;
           left: 870px;
       }
@@ -206,7 +203,6 @@
           border:1px solid rgba(255, 255, 255, 0.18);
           box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
           text-align: center;
-          position: fixed;
           top: 257px;
           left: 720px;
           border-radius: 50%;
@@ -222,7 +218,6 @@
           border:1px solid rgba(255, 255, 255, 0.18);
           box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
           text-align: center;
-          position: fixed;
           top: 372.5px;
           left: 700px;
           border-radius: 200px;
@@ -239,7 +234,6 @@
           border:1px solid rgba(255, 255, 255, 0.18);
           box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
           text-align: center;
-          position: fixed;
           top: 447px;
           left: 646px;
           border-radius: 200px;
@@ -258,7 +252,7 @@
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
         border-radius: 20px;
-        border:1px solid rgba(255, 255, 255, 0.18);
+        border: 1px solid rgba(255, 255, 255, 0.18);
         box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
         height: 300px;
         width: 320px;
@@ -269,7 +263,7 @@
       #ri{
         font: 1em Courier New;
         text-align: center;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+        border-bottom: 1px solid rgba(255, 0, 0, 0.226);
       }
       #green{
         font: 1em Courier New;
@@ -322,5 +316,77 @@
           bottom: 1px;
       }
       #eu:hover{
+        background: rgba(255, 0, 0, 0.226);
+      }
+      #us {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+      #ro{
+        font: 1em Courier New;
+        overflow: hidden;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        height: 300px;
+        width: 320px;
+        position: fixed;
+        bottom: 1px;
+        right: 1px;
+      }
+      #rp{
+        font: 1em Courier New;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 0, 0, 0.226);
+      }
+      #mi {
+        font: 1em Courier New;
+        padding: 1px 1px;
+        margin: 8px 0;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        font: 1em Courier New;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+          backdrop-filter: blur(10px);
+          -webkit-backdrop-filter: blur(10px);
+          border-radius: 20px;
+          border:1px solid rgba(255, 255, 255, 0.18);
+          box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+          position: fixed;
+          right: 5px;
+      }
+      #mi:hover{
+        background: rgba(255, 0, 0, 0.226);
+      }
+      #eo {
+        font: 1em Courier New;
+        padding: 12px 20px;
+        margin: 8px 0;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        font: 1em Courier New;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+          backdrop-filter: blur(10px);
+          -webkit-backdrop-filter: blur(10px);
+          border-radius: 20px;
+          border:1px solid rgba(255, 255, 255, 0.18);
+          box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+          position: fixed;
+          right: 120px;
+          bottom: 1px;
+      }
+      #eo:hover{
         background: rgba(255, 0, 0, 0.226);
       }
