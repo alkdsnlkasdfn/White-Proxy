@@ -100,9 +100,9 @@
         }
     </script>
     <form>
-        <a id="eu" onclick='document.getElementById("roadmap").style.display = "block"; document.getElementById("eu").style.display = "none";'>View Roadmap</a>
+        <a id="eu" onclick='document.getElementById("roadmap").style.display = "block"; document.getElementById("eu").style.display = "none";document.getElementById("eo").style.display = "none"'>Roadmap</a>
         <div id="roadmap" style="display: none;">
-            <a id="min" onclick='document.getElementById("roadmap").style.display = "none"; document.getElementById("eu").style.display = "block";'>-</a>
+            <a id="min" onclick='document.getElementById("roadmap").style.display = "none"; document.getElementById("eu").style.display = "block"; document.getElementById("eo").style.display = "block";'>-</a>
             <p id="ri">Roadmap</p>
             <p id="green">[1] New UI</p>
             <p id="red">[2] Multi-Tab Proxy</p>
@@ -112,11 +112,22 @@
             <p id="red">[6] Faster Proxy</p>
             <p id="red">[7] Paid Premium Tier</p>
         </div>
+        <a id="eo" onclick='document.getElementById("ro").style.display = "block"; document.getElementById("eo").style.display = "none"; document.getElementById("eu").style.display = "none";'>Change Log</a>
+        <div id="ro" style="display: none;">
+            <a id="mi" onclick='document.getElementById("ro").style.display = "none"; document.getElementById("eo").style.display = "block"; document.getElementById("eu").style.display = "block";'>-</a>
+            <p id="rp">Change Log</p>
+            <p id="no">[3/30/2025] Site Created.</p>
+            <p id="no">[3/31/2025] Login page reworked.</p>
+            <p id="no">[3/31/2025] Added the Change Log.</p>
+            <p id="no">[3/31/2025] Added more website compatibility by removing iframe.</p>
+        </div>
+        <div id="us">
         <img id="i" src="124138471_10157818254665933_5002802355620967700_o.avif" alt="King Von" width="100px" height="100px">
         <p id="p">King Von Proxy</p>
         <input type="password" id="pswd" placeholder="Enter password:">
         <input id="s" type="button" value="Submit" onclick="checkPswd();" />
         <p style="display: none;" id="n">Sorry! Incorrect password.</p>
+        </div>
     </form>
     <iframe id="iframeWindow" class="iframeWindow" style="display: none;">Sorry could not load.</iframe>
     <div id="hi" style="display: none;">
